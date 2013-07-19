@@ -11,9 +11,16 @@
 	<mvc:resources mapping="/style/**" location="/style/" />
 	<mvc:resources mapping="/script/**" location="/script/" />
 	<mvc:default-servlet-handler />
-	<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/views/" />
-		<property name="suffix" value=".jsp" />
+	<bean id="velocityConfigurer"
+		class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<property name="resourceLoaderPath">
+			<value>./views/</value>
+		</property>
+	</bean>
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+		<property name="suffix">
+			<value>.vm</value>
+		</property>
 	</bean>
 </beans>

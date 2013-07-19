@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Cluster List</title>
+</head>
+
+<body>
+	<h2>Cluster List</h2>
+	<table border="1">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Last Update Date</th>
+		</tr>
+		#foreach($cluster in $clusterList)
+		<tr>
+			<td>$cluster.id</td>
+			<td>$cluster.name</td>
+			<td>$cluster.lastUpdateDate</td>
+		</tr>
+		#end
+	</table>
+</body>
+</html>

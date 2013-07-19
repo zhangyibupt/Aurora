@@ -27,6 +27,16 @@
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.12</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>3.2.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>aurora</finalName>
