@@ -6,14 +6,14 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import aurora.ui.model.Cluster;
+import aurora.entity.Cluster;
 
 @Component
 public class ClusterService {
 	public List<Cluster> clusterList() {
 		List<Cluster> clusterList = new ArrayList<Cluster>();
 		int i;
-		for (i = 0; i < 8; i++) {
+		for (i = 0; i < 10; i++) {
 			Cluster cluster = new Cluster();
 			cluster.setId(i + 1);
 			cluster.setLastUpdateDate(new Date(System.currentTimeMillis()));

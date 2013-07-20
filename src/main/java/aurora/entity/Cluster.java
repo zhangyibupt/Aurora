@@ -1,4 +1,4 @@
-package aurora.ui.model;
+package aurora.entity;
 
 import java.util.Date;
 
@@ -30,5 +30,4 @@ public class Cluster {
 	public void setLastUpdateDate(Date lastUpdateDate) {
 		this.lastUpdateDate = lastUpdateDate;
 	}
-
 }
