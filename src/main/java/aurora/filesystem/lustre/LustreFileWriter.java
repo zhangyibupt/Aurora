@@ -6,8 +6,8 @@ import aurora.filesystem.Path;
 public class LustreFileWriter implements FileWriter {
 
 	// TODO
-	public byte[] writeToFile(Path path, byte[] content) {
+	public boolean writeToFile(Path path, byte[] content) {
 		// TODO Auto-generated method stub
-		return null;
+		return false;
 	}
 }
